@@ -43,7 +43,7 @@ table{width:100%;border-collapse:collapse;font-size:13px}th,td{border:1px solid 
 <div class="hero">
 <img src="logo.png" onerror="this.src='https://via.placeholder.com/100'">
 <h1>Welcome to EdSpring</h1>
-<p>Port Harcourt • Nursery • Primary • Secondary</p>
+<p>Port Harcourt • Primary • Secondary</p>
 <p><span class="badge">Admissions Open 2026/2027</span></p>
 <button onclick="showLogin()">🔑 LOGIN TO PORTAL</button>
 <p style="font-size:11px;margin-top:10px">Check Result • Pay Fees • Timetable • Assignments</p>
@@ -57,10 +57,29 @@ table{width:100%;border-collapse:collapse;font-size:13px}th,td{border:1px solid 
 <div class="card"><div style="font-size:30px">👑</div><h3>Admin Portal</h3><p>Manage students & school</p><button onclick="quickLogin('admin')">Admin Login</button></div>
 </div>
 
+<div class="sec">📝 How To Gain Admission</div>
+<div class="info">
+<b>Follow these 5 easy steps to join EdSpring:</b><br><br>
+<b>STEP 1 - Pick Admission Form</b><br>
+Come to school or chat us on WhatsApp to pick form. Form Fee: <b>₦5,000</b> (Primary) / <b>₦7,000</b> (Secondary)<br><br>
+<b>STEP 2 - Fill Form + Submit Documents</b><br>
+✅ Birth Certificate<br>
+✅ Last Result / Report Card<br>
+✅ 2 Passport Photos<br>
+✅ Immunization Card (for Primary)<br><br>
+<b>STEP 3 - Entrance Exam / Interview</b><br>
+Your child go write small test for Maths & English. For Primary 1-3, na oral interview. Exam Day: <b>Every Saturday 10am</b><br><br>
+<b>STEP 4 - Admission Offer</b><br>
+If child pass, school go give Admission Letter within 24 hours via WhatsApp / SMS.<br><br>
+<b>STEP 5 - Pay Acceptance Fee & Resume</b><br>
+Pay Acceptance Fee <b>₦10,000</b> to secure seat, then pay school fees. Child fit resume immediately.<br><br>
+<button class="btn btn-wa" onclick="window.open('https://wa.me/2349037002209?text=Hello EdSpring, I want Admission Form for my child. What class is available?','_blank')">💬 APPLY NOW ON WHATSAPP</button>
+</div>
+
 <div class="sec">🏫 About EdSpring</div>
 <div class="info">
-<b>EdSpring Private School</b> na standard private school for Port Harcourt. We dey train children for Nursery, Primary and Secondary with good morals, phonics, computer and strong academics.<br><br>
-✅ Small classes, caring teachers<br>✅ Weekly test + Term result online<br>✅ Fees fit pay for phone<br>✅ Assignment & timetable online<br><br>
+<b>EdSpring Private School</b> na standard private school for Port Harcourt. We dey train children for Primary and Secondary (Primary 1-6, JSS 1-3, SSS 1-3) with good morals, phonics, computer and strong academics.<br><br>
+✅ Small classes, caring teachers<br>✅ Weekly test + Term result online<br>✅ Fees fit pay for phone<br>✅ Assignment & timetable online<br>✅ Primary 1-6 • JSS 1-3 • SSS 1-3<br><br>
 <b>📞 Admissions:</b> 0903 700 2209<br>
 <b>📍 Location:</b> Port Harcourt, Rivers State<br>
 <button class="btn btn-wa no-print" onclick="window.open('https://wa.me/2349037002209?text=Hello EdSpring, I want admission info','_blank')">💬 Chat on WhatsApp</button>
@@ -74,7 +93,7 @@ table{width:100%;border-collapse:collapse;font-size:13px}th,td{border:1px solid 
 <input id="userId" placeholder="ID e.g ED001 / admin / teacher1">
 <input id="userPass" type="password" placeholder="Password e.g 1234">
 <button class="btn btn-blue" onclick="doLogin()">LOGIN →</button>
-<div class="demo"><b>DEMO LOGINS:</b><br>👑 Admin: <b>admin / 1234</b><br>👨‍🏫 Teacher: <b>teacher1 / 1234</b><br>👨‍👩‍👧 Parent/Student: <b>ED001 / 1234</b> (Godstime - Primary 5)<br>Also try: <b>ED002 / 1234</b>, <b>ED003 / 1234</b></div>
+<div class="demo"><b>DEMO LOGINS:</b><br>👑 Admin: <b>admin / 1234</b><br>👨‍🏫 Teacher: <b>teacher1 / 1234</b><br>👨‍👩‍👧 Parent/Student: <b>ED001 / 1234</b> (Godstime - Primary 5)<br>Also try: <b>ED002 / 1234</b>, <b>ED003 / 1234</b>, <b>ED004 / 1234</b> (Adaeze - SSS 2)</div>
 </div>
 <div style="text-align:center;font-size:12px;color:#888;padding:10px">© 2026 EdSpring Private School • Port Harcourt • Powered by EdSpring Portal</div>
 
@@ -91,6 +110,7 @@ var STUDENTS=[
 {id:"ED001",name:"Godstime James",class:"Primary 5",parent:"Mr James",phone:"09037002209",feesTotal:85000,feesPaid:50000,attendance:"92%",subjects:[{n:"Maths",ca:28,exam:58},{n:"English",ca:30,exam:62},{n:"Science",ca:25,exam:60},{n:"Social Studies",ca:27,exam:55},{n:"CRS",ca:29,exam:64}]},
 {id:"ED002",name:"Blessing Okoro",class:"Primary 5",parent:"Mrs Okoro",phone:"09037002209",feesTotal:85000,feesPaid:85000,attendance:"98%",subjects:[{n:"Maths",ca:30,exam:65},{n:"English",ca:28,exam:60},{n:"Science",ca:29,exam:63},{n:"Social Studies",ca:26,exam:58},{n:"CRS",ca:30,exam:66}]},
 {id:"ED003",name:"Emmanuel Eze",class:"JSS 1",parent:"Mr Eze",phone:"09037002209",feesTotal:95000,feesPaid:40000,attendance:"88%",subjects:[{n:"Maths",ca:22,exam:50},{n:"English",ca:24,exam:55},{n:"Science",ca:20,exam:52},{n:"Social Studies",ca:25,exam:58},{n:"CRS",ca:26,exam:60}]},
+{id:"ED004",name:"Adaeze Nwosu",class:"SSS 2",parent:"Mrs Nwosu",phone:"09037002209",feesTotal:120000,feesPaid:60000,attendance:"95%",subjects:[{n:"Maths",ca:26,exam:60},{n:"English",ca:28,exam:62},{n:"Physics",ca:24,exam:58},{n:"Chemistry",ca:25,exam:59},{n:"Biology",ca:27,exam:61}]},
 ];
 function grade(t){if(t>=70)return"A";if(t>=60)return"B";if(t>=50)return"C";if(t>=40)return"D";return"F";}
 function remark(t){if(t>=70)return"Excellent";if(t>=60)return"Very Good";if(t>=50)return"Good";if(t>=40)return"Fair";return"Need Improvement";}
@@ -103,7 +123,8 @@ function openAdmin(){
 var totalFees=STUDENTS.reduce((a,b)=>a+b.feesTotal,0),paid=STUDENTS.reduce((a,b)=>a+b.feesPaid,0);
 var rows=STUDENTS.map(s=>`<tr><td><b>${s.id}</b></td><td>${s.name}</td><td>${s.class}</td><td>₦${s.feesTotal.toLocaleString()}</td><td>₦${s.feesPaid.toLocaleString()}</td><td><b style="color:${s.feesTotal-s.feesPaid>0?'red':'green'}">₦${(s.feesTotal-s.feesPaid).toLocaleString()}</b></td></tr>`).join('');
 openDash('👑 Admin Dashboard','Proprietor • EdSpring Private School',`<button class="active">Overview</button><button onclick="openAdmin()">Students</button>`,
-`<div class="kpi"><div><b>${STUDENTS.length}</b>Students</div><div><b>3</b>Teachers</div><div><b>₦${(totalFees-paid).toLocaleString()}</b>Outstanding</div></div>
+`<div class="info"><b>📊 BREAKDOWN OF ADMITTED STUDENTS</b><br>🟢 Primary (1-6): <b>${STUDENTS.filter(s=>s.class.includes('Primary')).length} Students</b><br>🔵 JSS (1-3): <b>${STUDENTS.filter(s=>s.class.includes('JSS')).length} Students</b><br>🟣 SSS (1-3): <b>${STUDENTS.filter(s=>s.class.includes('SSS')).length} Students</b><br><b>Total Admitted: ${STUDENTS.length} Students</b><br><b>Session:</b> 2026/2027</div>
+<div class="kpi"><div><b>${STUDENTS.length}</b>Students</div><div><b>3</b>Teachers</div><div><b>₦${(totalFees-paid).toLocaleString()}</b>Outstanding</div></div>
 <div class="info"><b>💰 Fees Summary</b><br>Total Expected: ₦${totalFees.toLocaleString()}<br>Collected: ₦${paid.toLocaleString()}<br>Balance: ₦${(totalFees-paid).toLocaleString()}</div>
 <h3>All Students</h3><table><tr><th>ID</th><th>Name</th><th>Class</th><th>Fees</th><th>Paid</th><th>Balance</th></tr>${rows}</table>
 <br><h3>➕ Add New Student (Demo)</h3><input id="nName" placeholder="Full Name"><input id="nClass" placeholder="Class e.g Primary 4"><input id="nFees" type="number" placeholder="Fees e.g 85000"><button class="btn btn-green" onclick="addStudent()">Add Student</button>
@@ -134,4 +155,4 @@ function payNow(id){var s=STUDENTS.find(x=>x.id==id);var amt=parseInt(document.g
 function showTime(id){var s=STUDENTS.find(x=>x.id==id);openDash('📅 Timetable - '+s.class,s.name+` • ${s.class}`,`<button onclick="openParent(STUDENTS.find(x=>x.id=='${id}'),'parent')">← Back</button>`,`<table><tr><th>Day</th><th>Subjects</th></tr><tr><td>Mon</td><td>Maths, English, Science</td></tr><tr><td>Tue</td><td>English, Social Studies, CRS</td></tr><tr><td>Wed</td><td>Maths, Computer, Phonics</td></tr><tr><td>Thu</td><td>Science, English, Maths</td></tr><tr><td>Fri</td><td>Social Studies, CRS, Sports</td></tr></table><br><div class="info"><b>School Time:</b> 8:00am - 2:30pm<br><b>Assembly:</b> Monday 7:45am<br><b>Closing:</b> Friday 1:30pm</div>`);}
 </script>
 </body>
-  </html>
+</html>
