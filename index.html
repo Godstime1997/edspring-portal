@@ -2,30 +2,27 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EdSpring Private School - School Portal</title>
+<title>EdSpring Private School</title>
 <style>
-*{box-sizing:border-box}body{font-family:Inter,Arial;margin:0;background:#f4f6fb;color:#111;padding-bottom:30px}
-header{background:#0b2a6b;color:#fff;padding:12px 14px;position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center}
-.h-left{display:flex;gap:10px;align-items:center}.h-left img{width:52px;height:52px;border-radius:50%;background:#fff;object-fit:cover}
-.h-left b{font-size:19px;line-height:1}.h-left span{font-size:11px;color:#ffd84d;font-weight:700}
+*{box-sizing:border-box}body{font-family:Arial;margin:0;background:#f4f6fb;color:#111;padding-bottom:30px}
+header{background:#0b2a6b;color:#fff;padding:12px 14px;position:sticky;top:0;display:flex;justify-content:space-between;align-items:center}
+.h-left{display:flex;gap:10px;align-items:center}.h-left img{width:52px;height:52px;border-radius:50%;background:#fff}
 header button{background:#ffb400;border:none;padding:10px 16px;border-radius:20px;font-weight:900}
 .hero{margin:12px;background:linear-gradient(135deg,#0b2a6b,#0a7a3a);color:#fff;border-radius:18px;padding:22px 16px;text-align:center}
 .hero img{width:95px;height:95px;border-radius:50%;background:#fff;padding:3px}
-.hero h1{margin:8px 0 4px;font-size:24px}.hero p{margin:4px;color:#dbeafe;font-size:13px}
-.hero button{background:#ffb400;border:none;padding:13px 24px;border-radius:25px;font-weight:900;font-size:15px;margin-top:12px}
+.hero button{background:#ffb400;border:none;padding:13px 24px;border-radius:25px;font-weight:900;margin-top:12px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px}
-.card{background:#fff;border-radius:16px;padding:14px;text-align:center;box-shadow:0 4px 14px rgba(0,0,0,.06)}
-.card h3{margin:6px 0;font-size:15px}.card p{font-size:12px;color:#666;margin:0}
+.card{background:#fff;border-radius:16px;padding:14px;text-align:center}
 .card button{background:#0b2a6b;color:#fff;border:none;padding:10px;width:100%;border-radius:20px;font-weight:800;margin-top:10px}
 .card button.gold{background:#ffb400;color:#000}
 .sec{padding:2px 12px;font-weight:900;font-size:16px}
 .info{background:#fff;margin:10px;border-radius:16px;padding:15px;font-size:13px;line-height:1.7}
 .badge{display:inline-block;background:#e8f5e9;color:#0a7a3a;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:800}
 .badge.red{background:#ffebee;color:#c62828}
-.loginBox{background:#fff;margin:10px;border-radius:18px;padding:16px;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.loginBox{background:#fff;margin:10px;border-radius:18px;padding:16px}
 input,select{width:100%;padding:13px;margin:7px 0;border:1px solid #ddd;border-radius:11px;font-size:15px}
 .btn{border:none;padding:14px;width:100%;border-radius:12px;font-weight:900;font-size:15px}
-.btn-blue{background:#0b2a6b;color:#fff}.btn-gold{background:#ffb400;color:#000}.btn-green{background:#00a651;color:#fff}.btn-wa{background:#25D366;color:#fff}
+.btn-blue{background:#0b2a6b;color:#fff}.btn-green{background:#00a651;color:#fff}.btn-wa{background:#25D366;color:#fff}
 .demo{background:#fff8e1;padding:11px;border-radius:10px;font-size:12px;margin-top:10px;line-height:1.7}
 .modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);overflow-y:auto;z-index:50}
 .box{background:#fff;margin:10px;border-radius:20px;padding:16px;min-height:90vh}
@@ -38,74 +35,30 @@ table{width:100%;border-collapse:collapse;font-size:13px}th,td{border:1px solid 
 </style>
 </head>
 <body>
-<header><div class="h-left"><img src="logo.png" onerror="this.src='https://via.placeholder.com/100'"><div><b>EdSpring Private School</b><br><span>Excellence • Discipline • Godliness</span></div></div><button onclick="showLogin()">Login</button></header>
-
-<div class="hero">
-<img src="logo.png" onerror="this.src='https://via.placeholder.com/100'">
-<h1>Welcome to EdSpring</h1>
-<p>Port Harcourt • Primary • Secondary</p>
-<p><span class="badge">Admissions Open 2026/2027</span></p>
-<button onclick="showLogin()">🔑 LOGIN TO PORTAL</button>
-<p style="font-size:11px;margin-top:10px">Check Result • Pay Fees • Timetable • Assignments</p>
-</div>
-
+<header><div class="h-left"><img src="logo.png" onerror="this.src='https://via.placeholder.com/100'"><div><b>EdSpring Private School</b><br><span style="font-size:11px;color:#ffd84d">Excellence • Discipline • Godliness</span></div></div><button onclick="showLogin()">Login</button></header>
+<div class="hero"><img src="logo.png" onerror="this.src='https://via.placeholder.com/100'"><h1>Welcome to EdSpring</h1><p>Port Harcourt • Primary • Secondary</p><p><span class="badge">Admissions Open 2026/2027</span> <span class="badge">🔒 Result PIN: ₦1,000 / Term</span></p><button onclick="showLogin()">🔑 LOGIN TO PORTAL</button><p style="font-size:11px">Check Result • Pay Fees • Buy PIN • Timetable</p></div>
 <div class="sec">📚 Portal Services</div>
 <div class="grid">
-<div class="card"><div style="font-size:30px">📊</div><h3>Check Result</h3><p>Instant result with grade & position</p><button onclick="quickLogin('parent')">View Result</button></div>
-<div class="card"><div style="font-size:30px">💳</div><h3>Pay School Fees</h3><p>Pay online, see balance instantly</p><button class="gold" onclick="quickLogin('parent')">Pay Fees</button></div>
-<div class="card"><div style="font-size:30px">👨‍🏫</div><h3>Teacher Portal</h3><p>Enter scores & attendance</p><button onclick="quickLogin('teacher')">Teacher Login</button></div>
-<div class="card"><div style="font-size:30px">👑</div><h3>Admin Portal</h3><p>Manage students & school</p><button onclick="quickLogin('admin')">Admin Login</button></div>
+<div class="card"><h3>📊 Check Result</h3><p>Buy PIN, unlock result</p><button onclick="quickLogin('parent')">View Result</button></div>
+<div class="card"><h3>🔒 Buy Result PIN</h3><p>₦1,000 per term</p><button class="gold" onclick="quickLogin('parent')">Buy PIN</button></div>
+<div class="card"><h3>💳 Pay School Fees</h3><p>Pay online</p><button onclick="quickLogin('parent')">Pay Fees</button></div>
+<div class="card"><h3>👨‍🏫 Teacher Portal</h3><p>All students records</p><button onclick="quickLogin('teacher')">Teacher Login</button></div>
+<div class="card"><h3>👑 Admin Portal</h3><p>Manage students</p><button onclick="quickLogin('admin')">Admin Login</button></div>
+<div class="card"><h3>📝 Admission</h3><p>How to gain admission</p><button class="gold" onclick="showLogin()">Admission Steps</button></div>
 </div>
-
 <div class="sec">📝 How To Gain Admission</div>
-<div class="info">
-<b>Follow these 5 easy steps to join EdSpring:</b><br><br>
-<b>STEP 1 - Pick Admission Form</b><br>
-Come to school or chat us on WhatsApp to pick form. Form Fee: <b>₦5,000</b> (Primary) / <b>₦7,000</b> (Secondary)<br><br>
-<b>STEP 2 - Fill Form + Submit Documents</b><br>
-✅ Birth Certificate<br>
-✅ Last Result / Report Card<br>
-✅ 2 Passport Photos<br>
-✅ Immunization Card (for Primary)<br><br>
-<b>STEP 3 - Entrance Exam / Interview</b><br>
-Your child go write small test for Maths & English. For Primary 1-3, na oral interview. Exam Day: <b>Every Saturday 10am</b><br><br>
-<b>STEP 4 - Admission Offer</b><br>
-If child pass, school go give Admission Letter within 24 hours via WhatsApp / SMS.<br><br>
-<b>STEP 5 - Pay Acceptance Fee & Resume</b><br>
-Pay Acceptance Fee <b>₦10,000</b> to secure seat, then pay school fees. Child fit resume immediately.<br><br>
-<button class="btn btn-wa" onclick="window.open('https://wa.me/2349037002209?text=Hello EdSpring, I want Admission Form for my child. What class is available?','_blank')">💬 APPLY NOW ON WHATSAPP</button>
-</div>
-
+<div class="info"><b>5 Steps:</b><br><b>1.</b> Pick Form - ₦5,000 Primary / ₦7,000 Secondary<br><b>2.</b> Submit Documents - Birth Cert, Last Result, 2 Passport Photos<br><b>3.</b> Entrance Exam - Every Saturday 10am<br><b>4.</b> Admission Offer in 24hrs<br><b>5.</b> Pay Acceptance ₦10,000 & Resume<br><br><button class="btn btn-wa" onclick="window.open('https://wa.me/2349037002209?text=Hello EdSpring, I want Admission Form','_blank')">💬 APPLY ON WHATSAPP</button></div>
+<div class="sec">🔒 How To Buy Result PIN</div>
+<div class="info"><b>1.</b> Login with Student ID<br><b>2.</b> Click BUY PIN - ₦1,000<br><b>3.</b> Pay / WhatsApp<br><b>4.</b> Enter PIN to unlock result<br><b>Price:</b> ₦1,000 per student per term</div>
 <div class="sec">🏫 About EdSpring</div>
-<div class="info">
-<b>EdSpring Private School</b> na standard private school for Port Harcourt. We dey train children for Primary and Secondary (Primary 1-6, JSS 1-3, SSS 1-3) with good morals, phonics, computer and strong academics.<br><br>
-✅ Small classes, caring teachers<br>✅ Weekly test + Term result online<br>✅ Fees fit pay for phone<br>✅ Assignment & timetable online<br>✅ Primary 1-6 • JSS 1-3 • SSS 1-3<br><br>
-<b>📞 Admissions:</b> 0903 700 2209<br>
-<b>📍 Location:</b> Port Harcourt, Rivers State<br>
-<button class="btn btn-wa no-print" onclick="window.open('https://wa.me/2349037002209?text=Hello EdSpring, I want admission info','_blank')">💬 Chat on WhatsApp</button>
-</div>
-
+<div class="info"><b>EdSpring Private School</b> - Primary 1-6 • JSS 1-3 • SSS 1-3, Port Harcourt.<br>✅ Small classes ✅ Result online (PIN) ✅ Fees online ✅ Timetable online<br><b>📞</b> 0903 700 2209</div>
 <div class="sec">🔑 Login</div>
-<div class="loginBox" id="loginBox">
-<h2 style="margin:0">Login to Portal</h2>
-<p style="font-size:12px;color:#666">Choose role, enter ID & password</p>
-<select id="role"><option value="parent">Parent</option><option value="student">Student</option><option value="teacher">Teacher</option><option value="admin">Admin / Proprietor</option></select>
-<input id="userId" placeholder="ID e.g ED001 / admin / teacher1">
-<input id="userPass" type="password" placeholder="Password e.g 1234">
-<button class="btn btn-blue" onclick="doLogin()">LOGIN →</button>
-<div class="demo"><b>DEMO LOGINS:</b><br>👑 Admin: <b>admin / 1234</b><br>👨‍🏫 Teacher: <b>teacher1 / 1234</b><br>👨‍👩‍👧 Parent/Student: <b>ED001 / 1234</b> (Godstime - Primary 5)<br>Also try: <b>ED002 / 1234</b>, <b>ED003 / 1234</b>, <b>ED004 / 1234</b> (Adaeze - SSS 2)</div>
-</div>
-<div style="text-align:center;font-size:12px;color:#888;padding:10px">© 2026 EdSpring Private School • Port Harcourt • Powered by EdSpring Portal</div>
-
-<div class="modal" id="dashModal"><div class="box">
-<button class="close-btn no-print" onclick="closeDash()">✕ Close</button>
-<h2 id="dashTitle" style="margin:8px 0 0">Dashboard</h2>
-<p id="dashUser" style="color:#666;font-size:13px"></p>
-<div class="tab no-print" id="dashTabs"></div>
-<div id="dashContent"></div>
-</div></div>
-
+<div class="loginBox" id="loginBox"><h2 style="margin:0">Login to Portal</h2><select id="role"><option value="parent">Parent</option><option value="student">Student</option><option value="teacher">Teacher</option><option value="admin">Admin / Proprietor</option></select><input id="userId" placeholder="ID e.g ED001 / admin / teacher1"><input id="userPass" type="password" placeholder="Password e.g 1234"><button class="btn btn-blue" onclick="doLogin()">LOGIN →</button><div class="demo"><b>DEMO:</b><br>Admin: <b>admin / 1234</b><br>Teacher: <b>teacher1 / 1234</b><br>ED001 / 1234 PIN <b>1111</b> • ED002 PIN <b>2222</b> • ED003 PIN <b>3333</b> • ED004 PIN <b>4444</b> (Adaeze SSS 2)</div></div>
+<div style="text-align:center;font-size:12px;color:#888;padding:10px">© 2026 EdSpring Private School • Port Harcourt</div>
+<div class="modal" id="dashModal"><div class="box"><button class="close-btn no-print" onclick="closeDash()">✕ Close</button><h2 id="dashTitle">Dashboard</h2><p id="dashUser" style="color:#666;font-size:13px"></p><div class="tab no-print" id="dashTabs"></div><div id="dashContent"></div></div></div>
 <script>
+var RESULT_PINS={"ED001":"1111","ED002":"2222","ED003":"3333","ED004":"4444"};
+var UNLOCKED={};
 var STUDENTS=[
 {id:"ED001",name:"Godstime James",class:"Primary 5",parent:"Mr James",phone:"09037002209",feesTotal:85000,feesPaid:50000,attendance:"92%",subjects:[{n:"Maths",ca:28,exam:58},{n:"English",ca:30,exam:62},{n:"Science",ca:25,exam:60},{n:"Social Studies",ca:27,exam:55},{n:"CRS",ca:29,exam:64}]},
 {id:"ED002",name:"Blessing Okoro",class:"Primary 5",parent:"Mrs Okoro",phone:"09037002209",feesTotal:85000,feesPaid:85000,attendance:"98%",subjects:[{n:"Maths",ca:30,exam:65},{n:"English",ca:28,exam:60},{n:"Science",ca:29,exam:63},{n:"Social Studies",ca:26,exam:58},{n:"CRS",ca:30,exam:66}]},
@@ -116,43 +69,48 @@ function grade(t){if(t>=70)return"A";if(t>=60)return"B";if(t>=50)return"C";if(t>
 function remark(t){if(t>=70)return"Excellent";if(t>=60)return"Very Good";if(t>=50)return"Good";if(t>=40)return"Fair";return"Need Improvement";}
 function showLogin(){document.getElementById('loginBox').scrollIntoView({behavior:'smooth'});}
 function quickLogin(r){document.getElementById('role').value=r;document.getElementById('userId').value=r=='admin'?'admin':r=='teacher'?'teacher1':'ED001';document.getElementById('userPass').value='1234';showLogin();}
-function doLogin(){var r=document.getElementById('role').value;var id=document.getElementById('userId').value.trim();var p=document.getElementById('userPass').value.trim();if(p!='1234')return alert('Wrong password - Demo password na 1234');if(r=='admin'&&id=='admin')return openAdmin();if(r=='teacher'&&id=='teacher1')return openTeacher();if(r=='parent'||r=='student'){var s=STUDENTS.find(x=>x.id.toUpperCase()==id.toUpperCase());if(!s)return alert('Student ID not found. Try ED001');return openParent(s,r);}return alert('Wrong ID. Use demo login below');}
+function doLogin(){var r=document.getElementById('role').value;var id=document.getElementById('userId').value.trim();var p=document.getElementById('userPass').value.trim();if(p!='1234')return alert('Wrong password - 1234');if(r=='admin'&&id=='admin')return openAdmin();if(r=='teacher'&&id=='teacher1')return openTeacher();if(r=='parent'||r=='student'){var s=STUDENTS.find(x=>x.id.toUpperCase()==id.toUpperCase());if(!s)return alert('ID not found. Try ED001');return openParent(s,r);}return alert('Wrong ID');}
 function openDash(t,u,tabs,content){document.getElementById('dashTitle').innerText=t;document.getElementById('dashUser').innerText=u;document.getElementById('dashTabs').innerHTML=tabs;document.getElementById('dashContent').innerHTML=content;document.getElementById('dashModal').style.display='block';}
 function closeDash(){document.getElementById('dashModal').style.display='none';}
 function openAdmin(){
 var totalFees=STUDENTS.reduce((a,b)=>a+b.feesTotal,0),paid=STUDENTS.reduce((a,b)=>a+b.feesPaid,0);
-var rows=STUDENTS.map(s=>`<tr><td><b>${s.id}</b></td><td>${s.name}</td><td>${s.class}</td><td>₦${s.feesTotal.toLocaleString()}</td><td>₦${s.feesPaid.toLocaleString()}</td><td><b style="color:${s.feesTotal-s.feesPaid>0?'red':'green'}">₦${(s.feesTotal-s.feesPaid).toLocaleString()}</b></td></tr>`).join('');
-openDash('👑 Admin Dashboard','Proprietor • EdSpring Private School',`<button class="active">Overview</button><button onclick="openAdmin()">Students</button>`,
-`<div class="info"><b>📊 BREAKDOWN OF ADMITTED STUDENTS</b><br>🟢 Primary (1-6): <b>${STUDENTS.filter(s=>s.class.includes('Primary')).length} Students</b><br>🔵 JSS (1-3): <b>${STUDENTS.filter(s=>s.class.includes('JSS')).length} Students</b><br>🟣 SSS (1-3): <b>${STUDENTS.filter(s=>s.class.includes('SSS')).length} Students</b><br><b>Total Admitted: ${STUDENTS.length} Students</b><br><b>Session:</b> 2026/2027</div>
+var rows=STUDENTS.map(s=>`<tr><td><b>${s.id}</b></td><td>${s.name}</td><td>${s.class}</td><td>${RESULT_PINS[s.id]||'----'}</td><td>₦${s.feesTotal.toLocaleString()}</td><td>₦${s.feesPaid.toLocaleString()}</td><td><b style="color:${s.feesTotal-s.feesPaid>0?'red':'green'}">₦${(s.feesTotal-s.feesPaid).toLocaleString()}</b></td></tr>`).join('');
+openDash('👑 Admin Dashboard','Proprietor • EdSpring',`<button class="active">Overview</button>`,
+`<div class="info"><b>📊 BREAKDOWN OF ADMITTED STUDENTS</b><br>🟢 Primary: <b>${STUDENTS.filter(s=>s.class.includes('Primary')).length}</b> • 🔵 JSS: <b>${STUDENTS.filter(s=>s.class.includes('JSS')).length}</b> • 🟣 SSS: <b>${STUDENTS.filter(s=>s.class.includes('SSS')).length}</b><br><b>Total: ${STUDENTS.length} • Session 2026/2027</b></div>
 <div class="kpi"><div><b>${STUDENTS.length}</b>Students</div><div><b>3</b>Teachers</div><div><b>₦${(totalFees-paid).toLocaleString()}</b>Outstanding</div></div>
-<div class="info"><b>💰 Fees Summary</b><br>Total Expected: ₦${totalFees.toLocaleString()}<br>Collected: ₦${paid.toLocaleString()}<br>Balance: ₦${(totalFees-paid).toLocaleString()}</div>
-<h3>All Students</h3><table><tr><th>ID</th><th>Name</th><th>Class</th><th>Fees</th><th>Paid</th><th>Balance</th></tr>${rows}</table>
-<br><h3>➕ Add New Student (Demo)</h3><input id="nName" placeholder="Full Name"><input id="nClass" placeholder="Class e.g Primary 4"><input id="nFees" type="number" placeholder="Fees e.g 85000"><button class="btn btn-green" onclick="addStudent()">Add Student</button>
-<p style="font-size:12px;color:#666">This demo saves for this session. Real version go save for database.</p>`);
+<div class="info"><b>💰 Fees:</b> Expected ₦${totalFees.toLocaleString()} • Collected ₦${paid.toLocaleString()} • Balance ₦${(totalFees-paid).toLocaleString()}<br><b>🔒 PIN Income:</b> ₦${(STUDENTS.length*1000).toLocaleString()}</div>
+<h3>All Students + PIN</h3><table><tr><th>ID</th><th>Name</th><th>Class</th><th>PIN</th><th>Fees</th><th>Paid</th><th>Balance</th></tr>${rows}</table>
+<br><h3>➕ Add New Student</h3><input id="nName" placeholder="Full Name"><input id="nClass" placeholder="Class e.g Primary 4"><input id="nFees" type="number" placeholder="Fees e.g 85000"><button class="btn btn-green" onclick="addStudent()">Add Student</button>`);
 }
-function addStudent(){var n=document.getElementById('nName').value;var c=document.getElementById('nClass').value;var f=parseInt(document.getElementById('nFees').value||85000);if(!n||!c)return alert('Enter name and class');var id='ED'+String(STUDENTS.length+1).padStart(3,'0');STUDENTS.push({id:id,name:n,class:c,parent:'Parent',feesTotal:f,feesPaid:0,attendance:'100%',subjects:[{n:"Maths",ca:0,exam:0},{n:"English",ca:0,exam:0}]});alert('Student Added! ID: '+id+' Password: 1234');openAdmin();}
+function addStudent(){var n=document.getElementById('nName').value;var c=document.getElementById('nClass').value;var f=parseInt(document.getElementById('nFees').value||85000);if(!n||!c)return alert('Enter name and class');var id='ED'+String(STUDENTS.length+1).padStart(3,'0');STUDENTS.push({id:id,name:n,class:c,parent:'Parent',phone:'09037002209',feesTotal:f,feesPaid:0,attendance:'100%',subjects:[{n:"Maths",ca:0,exam:0},{n:"English",ca:0,exam:0}]});RESULT_PINS[id]=String(Math.floor(1000+Math.random()*9000));alert('Added! ID: '+id+' Pass: 1234 PIN: '+RESULT_PINS[id]);openAdmin();}
 function openTeacher(){
-var rows=STUDENTS.map(s=>`<tr><td>${s.name}<br><small>${s.id} - ${s.class}</small></td><td>${s.subjects[0].ca}/${s.subjects[0].exam}</td><td><b>${s.subjects[0].ca+s.subjects[0].exam}</b></td><td>${grade(s.subjects[0].ca+s.subjects[0].exam)}</td></tr>`).join('');
-openDash('👨‍🏫 Teacher Dashboard','Mrs Ada • Primary 5 • Maths Teacher',`<button class="active">My Class</button><button onclick="alert('Attendance saved! All present today.')">Attendance</button>`,
-`<div class="kpi"><div><b>${STUDENTS.length}</b>Students</div><div><b>Primary 5</b>Class</div><div><b>Maths</b>Subject</div></div>
-<h3>Primary 5 - Maths Scores (CA 30 + Exam 70)</h3><table><tr><th>Student</th><th>CA / Exam</th><th>Total</th><th>Grade</th></tr>${rows}</table>
-<br><h3>📝 New Assignment</h3><input placeholder="Assignment Title e.g Maths Exercise 5"><input placeholder="Due Date"><button class="btn btn-blue" onclick="alert('Assignment posted to parents!')">Post Assignment</button>
-<br><br><div class="info"><b>📅 Timetable - Primary 5</b><br>Mon: Maths, English, Science<br>Tue: English, Social, CRS<br>Wed: Maths, Computer, Phonics<br>Thu: Science, English, Maths<br>Fri: Social, CRS, Sports</div>`);
+var allRows=STUDENTS.map(s=>{var total=s.subjects.reduce((a,b)=>a+b.ca+b.exam,0);var avg=(total/s.subjects.length).toFixed(1);var bal=s.feesTotal-s.feesPaid;return `<tr data-name="${s.name.toLowerCase()} ${s.id.toLowerCase()} ${s.class.toLowerCase()}"><td><b>${s.name}</b><br><small>${s.id} • ${s.class}</small></td><td>${s.parent}</td><td>${s.attendance}</td><td><b>${avg}%</b> ${grade(avg)}</td><td>₦${s.feesTotal.toLocaleString()}</td><td style="color:${bal>0?'red':'green'}"><b>₦${bal.toLocaleString()}</b></td><td><button style="background:#0b2a6b;color:#fff;border:none;padding:7px 12px;border-radius:15px;font-weight:800" onclick="viewStudentRecord('${s.id}')">View</button></td></tr>`}).join('');
+openDash('👨‍🏫 Teacher Dashboard','Mrs Ada • All Classes',`<button class="active">All Students</button>`,
+`<div class="kpi"><div><b>${STUDENTS.length}</b>Total</div><div><b>${STUDENTS.filter(s=>s.class.includes('Primary')).length}</b>Primary</div><div><b>${STUDENTS.filter(s=>s.class.includes('JSS')).length + STUDENTS.filter(s=>s.class.includes('SSS')).length}</b>Secondary</div></div>
+<input id="searchStudent" placeholder="🔍 Search Name, ID, Class..." onkeyup="filterStudents()">
+<div style="display:flex;gap:6px;margin-bottom:10px"><button style="background:#0b2a6b;color:#fff;border:none;padding:8px 14px;border-radius:20px;font-weight:800" onclick="filterByClass('all')">All</button><button style="background:#0a7a3a;color:#fff;border:none;padding:8px 14px;border-radius:20px;font-weight:800" onclick="filterByClass('primary')">Primary</button><button style="background:#ffb400;border:none;padding:8px 14px;border-radius:20px;font-weight:800" onclick="filterByClass('jss')">JSS</button><button style="background:#6a1b9a;color:#fff;border:none;padding:8px 14px;border-radius:20px;font-weight:800" onclick="filterByClass('sss')">SSS</button></div>
+<table><tr><th>Student</th><th>Parent</th><th>Attend.</th><th>Avg</th><th>Fees</th><th>Balance</th><th>Action</th></tr><tbody id="teacherTable">${allRows}</tbody></table>
+<br><h3>📝 Post Assignment</h3><input placeholder="Title e.g Maths Exercise 5"><select><option>All Classes</option><option>Primary 1-6</option><option>JSS 1-3</option><option>SSS 1-3</option></select><button class="btn btn-blue" onclick="alert('Assignment posted!')">Post Assignment</button>`);
 }
+function filterStudents(){var q=document.getElementById('searchStudent').value.toLowerCase();document.querySelectorAll('#teacherTable tr').forEach(r=>{r.style.display=r.getAttribute('data-name').includes(q)?'':'none';});}
+function filterByClass(type){document.querySelectorAll('#teacherTable tr').forEach(r=>{var n=r.getAttribute('data-name');if(type=='all')r.style.display='';else r.style.display=n.includes(type)?'':'none';});}
+function viewStudentRecord(id){var s=STUDENTS.find(x=>x.id==id);var total=s.subjects.reduce((a,b)=>a+b.ca+b.exam,0);var avg=(total/s.subjects.length).toFixed(1);var subj=s.subjects.map(x=>`<tr><td>${x.n}</td><td>${x.ca}</td><td>${x.exam}</td><td><b>${x.ca+x.exam}</b></td><td>${grade(x.ca+x.exam)}</td></tr>`).join('');openDash('📋 Record - '+s.name,`${s.id} • ${s.class} • Parent: ${s.parent} • PIN: ${RESULT_PINS[id]}`,`<button onclick="openTeacher()">← Back</button>`,`<div class="kpi"><div><b>${avg}%</b>Average</div><div><b>${s.attendance}</b>Attendance</div><div><b>₦${(s.feesTotal-s.feesPaid).toLocaleString()}</b>Balance</div></div><div class="info"><b>Name:</b> ${s.name}<br><b>Class:</b> ${s.class}<br><b>Parent:</b> ${s.parent} • ${s.phone}<br><b>Fees:</b> ₦${s.feesTotal.toLocaleString()} • Paid ₦${s.feesPaid.toLocaleString()}<br><b>PIN:</b> ${RESULT_PINS[id]}</div><h3>Results</h3><table><tr><th>Subject</th><th>CA</th><th>Exam</th><th>Total</th><th>Grade</th></tr>${subj}</table>`);}
 function openParent(s,role){
+if(!UNLOCKED[s.id]){
+openDash('🎓 Student Dashboard',`${s.name} • ${s.class} • ${s.id}`,`<button class="active">Result (Locked)</button><button onclick="showFees('${s.id}')">Fees</button><button onclick="showTime('${s.id}')">Timetable</button>`,
+`<div style="text-align:center;padding:20px 10px"><div style="font-size:50px">🔒</div><h3>Result Is Locked</h3><p style="color:#666">Enter Result PIN for <b>${s.name}</b>. PIN na ₦1,000 per term.</p><input id="pinInput" placeholder="Enter PIN e.g 1111" style="text-align:center;font-size:18px;letter-spacing:3px;font-weight:900"><button class="btn btn-blue" onclick="unlockResult('${s.id}','${role}')">🔓 UNLOCK RESULT</button><br><br><button class="btn btn-green" onclick="buyPin('${s.id}')">💳 BUY PIN - ₦1,000</button><br><br><button class="btn btn-wa" onclick="window.open('https://wa.me/2349037002209?text=I want Result PIN for ${s.name} ${s.id}','_blank')">💬 Buy PIN on WhatsApp</button><p style="font-size:12px;color:#888">DEMO: ED001=1111 ED002=2222 ED003=3333 ED004=4444</p></div>`);
+return;
+}
 var bal=s.feesTotal-s.feesPaid;var total=s.subjects.reduce((a,b)=>a+b.ca+b.exam,0);var avg=(total/s.subjects.length).toFixed(1);
 var rows=s.subjects.map(x=>{var t=x.ca+x.exam;return `<tr><td>${x.n}</td><td>${x.ca}</td><td>${x.exam}</td><td><b>${t}</b></td><td>${grade(t)}</td><td>${remark(t)}</td></tr>`}).join('');
-openDash(role=='parent'?'👨‍👩‍👧 Parent Dashboard':'🎓 Student Dashboard',`${s.name} • ${s.class} • ID: ${s.id}`,`<button class="active" onclick="openParent(STUDENTS.find(x=>x.id=='${s.id}'),'${role}')">Result</button><button onclick="showFees('${s.id}')">Fees</button><button onclick="showTime('${s.id}')">Timetable</button>`,
-`<div class="kpi"><div><b>${avg}%</b>Average</div><div><b>${s.attendance}</b>Attendance</div><div><b>₦${bal.toLocaleString()}</b>Fees Balance</div></div>
-<div class="resultHead"><img src="logo.png"><h3 style="margin:4px">EDSPRING PRIVATE SCHOOL</h3><p style="margin:0;font-size:12px">Port Harcourt • Term Result • 2026/2027 Session</p><p style="font-size:13px"><b>Name:</b> ${s.name} | <b>Class:</b> ${s.class} | <b>ID:</b> ${s.id}</p></div>
-<table><tr><th>Subject</th><th>CA (30)</th><th>Exam (70)</th><th>Total (100)</th><th>Grade</th><th>Remark</th></tr>${rows}</table>
-<p><b>Total:</b> ${total} / ${s.subjects.length*100} • <b>Average:</b> ${avg}% • <b>Class Teacher Remark:</b> ${avg>=60?'Excellent performance, keep it up!':'Good effort, can do better next term.'}</p>
-<button class="btn btn-blue no-print" onclick="window.print()">🖨️ Print / Save Result as PDF</button>
-<br><br><div class="info"><b>📝 Assignment:</b> Maths - Do Exercise 5, Page 42. Due Friday.<br><b>📢 Notice:</b> PTA Meeting Saturday 10am. Come with result.</div>`);
+openDash('🎓 Student Dashboard',`${s.name} • ${s.class} • ${s.id} • ✅ PIN Verified`, `<button class="active" onclick="openParent(STUDENTS.find(x=>x.id=='${s.id}'),'${role}')">Result</button><button onclick="showFees('${s.id}')">Fees</button><button onclick="showTime('${s.id}')">Timetable</button>`,
+`<div class="kpi"><div><b>${avg}%</b>Average</div><div><b>${s.attendance}</b>Attendance</div><div><b>₦${bal.toLocaleString()}</b>Balance</div></div><div class="resultHead"><h3>EDSPRING PRIVATE SCHOOL</h3><p>Port Harcourt • Term Result • 2026/2027</p><p><b>Name:</b> ${s.name} | <b>Class:</b> ${s.class} | <b>ID:</b> ${s.id}</p></div><table><tr><th>Subject</th><th>CA</th><th>Exam</th><th>Total</th><th>Grade</th><th>Remark</th></tr>${rows}</table><p><b>Total:</b> ${total} • <b>Average:</b> ${avg}%</p><button class="btn btn-blue no-print" onclick="window.print()">🖨️ Print / Save PDF</button>`);
 }
-function showFees(id){var s=STUDENTS.find(x=>x.id==id);var bal=s.feesTotal-s.feesPaid;openDash('💳 Fees - '+s.name,`${s.class} • ID: ${s.id}`,`<button onclick="openParent(STUDENTS.find(x=>x.id=='${id}'),'parent')">← Back to Result</button>`,`<div class="info"><b>Total Fees:</b> ₦${s.feesTotal.toLocaleString()}<br><b>Paid:</b> ₦${s.feesPaid.toLocaleString()}<br><b>Balance:</b> <b style="color:${bal>0?'red':'green'}">₦${bal.toLocaleString()}</b><br><b>Status:</b> ${bal==0?'<span class="badge">✅ FULLY PAID</span>':'<span class="badge red">⚠️ BALANCE REMAINING</span>'}</div><h3>Pay Balance: ₦${bal.toLocaleString()}</h3><input id="payAmt" type="number" value="${bal}" placeholder="Amount"><button class="btn btn-green" onclick="payNow('${id}')">💳 Pay Now with Card / Transfer</button><button class="btn btn-wa" onclick="window.open('https://wa.me/2349037002209?text=Hello, I want to confirm fees for ${s.name} ${s.id} - Balance ₦${bal}','_blank')">💬 Confirm on WhatsApp</button><p style="font-size:12px;color:#666">Demo: After you add Paystack key, real payment go work. For now, payment go mark as paid for demo.</p>`);}
-function payNow(id){var s=STUDENTS.find(x=>x.id==id);var amt=parseInt(document.getElementById('payAmt').value||0);if(amt<=0)return alert('Enter amount');s.feesPaid+=amt;alert('Payment successful! ₦'+amt.toLocaleString()+' paid for '+s.name+'. New balance: ₦'+(s.feesTotal-s.feesPaid).toLocaleString());showFees(id);}
-function showTime(id){var s=STUDENTS.find(x=>x.id==id);openDash('📅 Timetable - '+s.class,s.name+` • ${s.class}`,`<button onclick="openParent(STUDENTS.find(x=>x.id=='${id}'),'parent')">← Back</button>`,`<table><tr><th>Day</th><th>Subjects</th></tr><tr><td>Mon</td><td>Maths, English, Science</td></tr><tr><td>Tue</td><td>English, Social Studies, CRS</td></tr><tr><td>Wed</td><td>Maths, Computer, Phonics</td></tr><tr><td>Thu</td><td>Science, English, Maths</td></tr><tr><td>Fri</td><td>Social Studies, CRS, Sports</td></tr></table><br><div class="info"><b>School Time:</b> 8:00am - 2:30pm<br><b>Assembly:</b> Monday 7:45am<br><b>Closing:</b> Friday 1:30pm</div>`);}
+function unlockResult(id,role){var pin=document.getElementById('pinInput').value.trim();if(pin==RESULT_PINS[id]){UNLOCKED[id]=true;alert('✅ PIN Correct!');var s=STUDENTS.find(x=>x.id==id);openParent(s,role);}else{alert('❌ Wrong PIN! Buy PIN for ₦1,000');}}
+function buyPin(id){var s=STUDENTS.find(x=>x.id==id);if(confirm('Buy PIN for '+s.name+' ₦1,000?')){alert('✅ Payment Successful! PIN for '+s.name+' is: '+RESULT_PINS[id]);document.getElementById('pinInput').value=RESULT_PINS[id];}}
+function showFees(id){var s=STUDENTS.find(x=>x.id==id);var bal=s.feesTotal-s.feesPaid;openDash('💳 Fees - '+s.name,`${s.class} • ${s.id}`,`<button onclick="openParent(STUDENTS.find(x=>x.id=='${id}'),'parent')">← Back</button>`,`<div class="info"><b>Total:</b> ₦${s.feesTotal.toLocaleString()}<br><b>Paid:</b> ₦${s.feesPaid.toLocaleString()}<br><b>Balance:</b> ₦${bal.toLocaleString()}</div><input id="payAmt" type="number" value="${bal}"><button class="btn btn-green" onclick="payNow('${id}')">💳 Pay Now</button>`);}
+function payNow(id){var s=STUDENTS.find(x=>x.id==id);var amt=parseInt(document.getElementById('payAmt').value||0);if(amt<=0)return alert('Enter amount');s.feesPaid+=amt;alert('Paid ₦'+amt.toLocaleString()+'. New balance ₦'+(s.feesTotal-s.feesPaid).toLocaleString());showFees(id);}
+function showTime(id){var s=STUDENTS.find(x=>x.id==id);openDash('📅 Timetable - '+s.class,s.name,` <button onclick="openParent(STUDENTS.find(x=>x.id=='${id}'),'parent')">← Back</button>`,`<table><tr><th>Day</th><th>Subjects</th></tr><tr><td>Mon</td><td>Maths, English, Science</td></tr><tr><td>Tue</td><td>English, Social, CRS</td></tr><tr><td>Wed</td><td>Maths, Computer, Phonics</td></tr><tr><td>Thu</td><td>Science, English, Maths</td></tr><tr><td>Fri</td><td>Social, CRS, Sports</td></tr></table>`);}
 </script>
 </body>
 </html>
